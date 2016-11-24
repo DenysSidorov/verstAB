@@ -150,7 +150,6 @@ html {
 }
 .header .headerLogo {
   margin-top: 23px;
-  margin-left: 15px;
 }
 .headerButton {
   margin-top: 31px;
@@ -169,9 +168,14 @@ html {
   vertical-align: top;
   font: 13px/31px 'Arial';
   text-align: center;
-  -webkit-box-shadow: 1px 1px 2px 2px rgba(178, 178, 178, 0.44);
-  -moz-box-shadow: 1px 1px 2px 2px rgba(178, 178, 178, 0.44);
-  box-shadow: 1px 1px 2px 2px rgba(178, 178, 178, 0.44);
+  background: #b2b2b2;
+  background: -moz-linear-gradient(top, #b2b2b2 0%, #5c5c5c 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #b2b2b2), color-stop(100%, #5c5c5c));
+  background: -webkit-linear-gradient(top, #b2b2b2 0%, #5c5c5c 100%);
+  background: -o-linear-gradient(top, #b2b2b2 0%, #5c5c5c 100%);
+  background: -ms-linear-gradient(top, #b2b2b2 0%, #5c5c5c 100%);
+  background: linear-gradient(to bottom, #b2b2b2 0%, #5c5c5c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b2b2b2', endColorstr='#5c5c5c', GradientType=0);
   background: linear-gradient(#acacac 0%, #828282 33%, #828282 46%, #575757 60%, #5f5f5f 100%);
   -webkit-transition: 0.3s ease all;
   -moz-transition: 0.3s ease all;
@@ -180,7 +184,14 @@ html {
   transition: 0.3s ease all;
 }
 .chat:hover {
-  background: linear-gradient(#575757 0%, #828282 33%, #828282 46%, #acacac 60%, #5f5f5f 100%);
+  background: #5c5c5c;
+  background: -moz-linear-gradient(top, #5c5c5c 0%, #b2b2b2 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #5c5c5c), color-stop(100%, #b2b2b2));
+  background: -webkit-linear-gradient(top, #5c5c5c 0%, #b2b2b2 100%);
+  background: -o-linear-gradient(top, #5c5c5c 0%, #b2b2b2 100%);
+  background: -ms-linear-gradient(top, #5c5c5c 0%, #b2b2b2 100%);
+  background: linear-gradient(to bottom, #5c5c5c 0%, #b2b2b2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5c5c5c', endColorstr='#b2b2b2', GradientType=0);
 }
 .sales {
   display: inline-block;
@@ -209,14 +220,46 @@ html {
 .shadowLine {
   margin-top: 10px;
   width: 100%;
-  height: 1px;
+  height: 26px;
   background-color: #ffffff;
-  border-radius: 500px;
-  -webkit-box-shadow: 0px -6px 11px 0px rgba(50, 50, 50, 0.5);
-  -moz-box-shadow: 0px -6px 11px 0px rgba(50, 50, 50, 0.5);
-  box-shadow: 0px -6px 11px 0px rgba(50, 50, 50, 0.5);
+  -webkit-box-shadow: 0px -10px 30px -10px #e7e7e7;
+  -moz-box-shadow: 0px -10px 30px -10px #e7e7e7;
+  box-shadow: 0px -10px 30px -10px #e7e7e7;
+}
+.socOne {
+  background-color: #8595b1;
+}
+.socOne:hover {
+  background-color: #afc0e7;
+}
+.socTwo {
+  background-color: #6ecce9;
+}
+.socTwo:hover {
+  background-color: #8ae1ff;
+}
+.socThree {
+  background-color: #e18286;
+}
+.socThree:hover {
+  background-color: #fe9a9e;
+}
+.socFour {
+  background-color: #72a1b6;
+}
+.socFour:hover {
+  background-color: #9acfe5;
+}
+.socFife {
+  background-color: #e6b38a;
+}
+.socFife:hover {
+  background-color: #fec79c;
 }
 .bannerSection .container {
+  -webkit-box-shadow: 0px 10px 30px -10px #dddddd;
+  -moz-box-shadow: 0px 10px 30px -10px #dddddd;
+  box-shadow: 0px 10px 30px -10px #dddddd;
   padding-left: 60px;
   padding-right: 10px;
   background-color: #f2f2f2;
@@ -224,19 +267,40 @@ html {
   -moz-border-radius: 10px;
   border-radius: 10px;
   height: 420px;
-  margin-top: 25px;
   padding-bottom: 30px;
   padding-top: 30px;
 }
+.bannerSection .container .whiteBlock {
+  width: 25px;
+  height: 300px;
+  position: absolute;
+  top: 60px;
+  left: 103%;
+  -webkit-box-shadow: inset 10px 0px 15px -14px #acacac;
+  -moz-box-shadow: inset 10px 0px 15px -14px #acacac;
+  box-shadow: inset 10px 0px 15px -14px #acacac;
+}
 .bannerSection .container .socialBlock {
   position: absolute;
-  top: 50%;
-  background-color: #83a7a5;
+  top: 31%;
+  left: 102%;
   width: 40px;
   height: 165px;
+  padding: 15px 0 15px 0;
+  -webkit-box-shadow: 10px 10px 30px -10px #dddddd;
+  -moz-box-shadow: 10px 10px 30px -10px #dddddd;
+  box-shadow: 10px 10px 30px -10px #dddddd;
+}
+.bannerSection .container .socialBlock .socButton {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin: 0 auto 8px;
+}
+.bannerSection .container .socialBlock .socButton a {
+  color: #ffffff;
 }
 .bannerSection .container .bannerPluns {
-  background-color: rgba(255, 211, 159, 0.33);
   width: 400px;
   height: 100%;
 }
@@ -250,7 +314,20 @@ html {
   font: 45px/45px 'latoLight';
   color: #5d6067;
 }
-.bannerSection .container .bannerPluns .bannerMainButton {
+.bannerSection .container .bannerVideo {
+  width: 500px;
+  position: relative;
+  height: 360px;
+  background: #f2f2f2;
+  background: -moz-linear-gradient(top, #f2f2f2 0%, #eeeeee 100%);
+  background: -webkit-linear-gradient(top, #f2f2f2 0%, #eeeeee 100%);
+  background: linear-gradient(to bottom, #f2f2f2 0%, #eeeeee 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#eeeeee', GradientType=0);
+}
+.bannerSection .container .bannerVideo .mobileVideo {
+  height: 100%;
+}
+.bannerMainButton {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -272,20 +349,20 @@ html {
   text-align: center;
   padding: 12px;
   -webkit-transition: 0.3s ease all;
-  -moz-transition: 0.3s ease all ;
-  -ms-transition: 0.3s ease all ;
-  -o-transition: 0.3s ease all ;
+  -moz-transition: 0.3s ease all;
+  -ms-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
   transition: 0.3s ease all;
 }
-.bannerSection .container .bannerPluns .bannerMainButton .plans {
+.bannerMainButton .plans {
   font: 32px/32px 'latoBold';
   color: #ffffff;
 }
-.bannerSection .container .bannerPluns .bannerMainButton .from {
+.bannerMainButton .from {
   font: 14px/17px 'latoRegular';
   color: #ffffff;
 }
-.bannerSection .container .bannerPluns .bannerMainButton:hover {
+.bannerMainButton:hover {
   background-color: #fe963c;
   background: -moz-linear-gradient(top, #bb4f1a 0%, #ed8433 26%, #d76f29 55%, #fe963c 87%, #d3571e 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #bb4f1a), color-stop(26%, #ed8433), color-stop(55%, #d76f29), color-stop(87%, #fe963c), color-stop(100%, #d3571e));
@@ -293,20 +370,6 @@ html {
   background: -o-linear-gradient(top, #bb4f1a 0%, #ed8433 26%, #d76f29 55%, #fe963c 87%, #d3571e 100%);
   background: -ms-linear-gradient(top, #bb4f1a 0%, #ed8433 26%, #d76f29 55%, #fe963c 87%, #d3571e 100%);
   background: linear-gradient(to bottom, #bb4f1a 0%, #ed8433 26%, #d76f29 55%, #fe963c 87%, #d3571e 100%);
-}
-.bannerSection .container .bannerVideo {
-  width: 500px;
-  position: relative;
-  height: 360px;
-  background: #f2f2f2;
-  background: -moz-linear-gradient(top, #f2f2f2 0%, #eeeeee 100%);
-  background: -webkit-linear-gradient(top, #f2f2f2 0%, #eeeeee 100%);
-  background: linear-gradient(to bottom, #f2f2f2 0%, #eeeeee 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#eeeeee', GradientType=0);
-}
-.bannerSection .container .bannerVideo .mobileVideo {
-  height: 100%
-      ;
 }
 .playButton {
   cursor: pointer;
@@ -324,25 +387,23 @@ html {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-transition: all ease 0.5s ;
-  -moz-transition: all ease 0.5s ;
-  -ms-transition: all ease 0.5s ;
-  -o-transition: all ease 0.5s ;
-  transition: all ease 0.5s ;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 .playButton:after {
   content: '';
   position: absolute;
-  /* Абсолютное позиционирование */
   left: 37px;
   top: 18px;
-  /* Положение треугольника */
   display: block;
   border: 26px solid transparent;
   border-left: 26px solid white;
 }
 .playButton:hover {
-  background-color: #f6903b;
+  background-color: #e47d3c;
 }
 .playButton:hover:after {
   border-left: 26px solid #dedede;
@@ -375,16 +436,15 @@ html {
   overflow: hidden;
   width: 100%;
   background: rgba(0, 0, 0, 0.3);
-  -webkit-transform: translateY(100%);
-  -moz-transform: translateY(100%);
-  -ms-transform: translateY(100%);
-  -o-transform: translateY(100%);
-  transform: translateY(100%);
+  opacity: 0;
   -webkit-transition: 0.3s ease all;
   -moz-transition: 0.3s ease all;
   -ms-transition: 0.3s ease all;
   -o-transition: 0.3s ease all;
   transition: 0.3s ease all;
+  -webkit-border-radius: 0 0 15px 15px;
+  -moz-border-radius: 0 0 15px 15px;
+  border-radius: 0 0 15px 15px;
 }
 .productsSection .item .bottomText span {
   position: absolute;
@@ -425,11 +485,7 @@ html {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);
 }
 .productsSection .item:hover .bottomText {
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  -o-transform: translateY(0);
-  transform: translateY(0);
+  opacity: 1;
 }
 .productsSection .item:hover .centerIcon {
   top: 25px;
@@ -451,4 +507,510 @@ html {
   display: inline;
   color: #fe9748;
   font: 14px/21px 'latoBold';
+}
+.shadowLineDown {
+  clear: both;
+  -webkit-box-shadow: 0px 10px 30px -10px #dddddd;
+  -moz-box-shadow: 0px 10px 30px -10px #dddddd;
+  box-shadow: 0px 10px 30px -10px #dddddd;
+  width: 100%;
+  height: 25px;
+  background-color: #ffffff;
+}
+.clearShadow {
+  height: 170px;
+}
+.formSection .container {
+  margin-top: 14px;
+  max-height: 350px;
+}
+.formSection .container .formBlock {
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #ffffff 0%, #e8e9ed 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #e8e9ed));
+  background: -webkit-linear-gradient(top, #ffffff 0%, #e8e9ed 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #e8e9ed 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%, #e8e9ed 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #e8e9ed 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e8e9ed', GradientType=0);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #ceced3;
+  padding: 30px 20px 25px 25px;
+  width: 75%;
+}
+.formSection .container .formBlock .customInput {
+  height: 30px;
+  margin-bottom: 10px;
+}
+.formSection .container .formBlock .customInput input {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0 15px;
+  color: #a5afb5;
+  border: 1px solid #a5afb5;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font: 14px/14px 'latoItalic';
+  /* Firefox 19+ */
+  /* Firefox 18- */
+  -webkit-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
+.formSection .container .formBlock .customInput input::-webkit-input-placeholder {
+  color: #a5afb5;
+}
+.formSection .container .formBlock .customInput input::-moz-placeholder {
+  color: #a5afb5;
+}
+.formSection .container .formBlock .customInput input:-moz-placeholder {
+  color: #a5afb5;
+}
+.formSection .container .formBlock .customInput input:-ms-input-placeholder {
+  color: #a5afb5;
+}
+.formSection .container .formBlock .customButton button {
+  display: inline-block;
+  height: 30px;
+  width: 135px;
+  border: 1px solid #c3c3c7;
+  color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font: 14px/17px 'latoBold';
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: #c3c3c3;
+  background: -moz-linear-gradient(top, #c3c3c3 0%, #4c4c4c 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #c3c3c3), color-stop(100%, #4c4c4c));
+  background: -webkit-linear-gradient(top, #c3c3c3 0%, #4c4c4c 100%);
+  background: -o-linear-gradient(top, #c3c3c3 0%, #4c4c4c 100%);
+  background: -ms-linear-gradient(top, #c3c3c3 0%, #4c4c4c 100%);
+  background: linear-gradient(to bottom, #c3c3c3 0%, #4c4c4c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c3c3c3', endColorstr='#4c4c4c', GradientType=0);
+}
+.formSection .container .formBlock .customButton button:hover {
+  background: #4C4C4C;
+  color: #ffffff;
+}
+.formSection .container .formBlock .formTitle {
+  font: 42px/42px 'latoLight';
+  color: #333333;
+}
+.formSection .container .formBlock .formSubTitle {
+  font: 16px/25px 'latoRegular';
+  color: #a1a1a1;
+  margin: 10px 0 20px;
+}
+.formSection .container .callBlock {
+  text-align: center;
+  width: 25%;
+}
+.formSection .container .callBlock .freeButton {
+  margin-top: 3px;
+  width: 175px;
+}
+.formSection .container .callBlock .freeButton .from {
+  font: 10px/10px 'latoRegular';
+}
+.formSection .container .callBlock .freeButton .plans {
+  font: 23px/34px 'latoRegular';
+}
+.formSection .container .callBlock .chat {
+  width: 175px;
+}
+.formSection .container .callBlock .call {
+  margin-top: 22px;
+  font: 22px/32px 'latoRegular';
+  color: #797979;
+}
+.formSection .container .callBlock .phone {
+  color: #fe9748;
+  font: 22px/22px 'latoBold';
+}
+.cardSection {
+  margin-top: 70px;
+  margin-bottom: 75px;
+}
+.cardSection .container .card {
+  position: relative;
+  padding: 40px 20px 10px;
+  float: left;
+  width: 32.3333%;
+  margin: 0 0 0 1.333333%;
+  height: 290px;
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #ffffff 0%, #e8e9ed 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #e8e9ed));
+  background: -webkit-linear-gradient(top, #ffffff 0%, #e8e9ed 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #e8e9ed 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%, #e8e9ed 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #e8e9ed 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e8e9ed', GradientType=0);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #ceced3;
+}
+.cardSection .container .card:nth-child(1) {
+  margin: 0 0 0 0;
+}
+.cardSection .container .card .lineDivide {
+  width: 100%;
+  height: 1px;
+  background-color: #070707;
+  margin: 20px 0 20px 0;
+}
+.cardSection .container .card .titleCard {
+  font: 20px/20px 'latoBold';
+  color: #000000;
+}
+.cardSection .container .card .contentCard {
+  font: 14px/18px 'latoRegular';
+  color: #848484;
+  max-height: 108px;
+  overflow: hidden;
+}
+.cardSection .container .card .quoteCard {
+  margin-top: 20px;
+  clear: both;
+  font: 13px/18px 'latoBold';
+  color: #333333;
+}
+.cardSection .container .card .readMoreCard {
+  float: right;
+  position: absolute;
+  right: 13px;
+  bottom: 13px;
+  font: 14px/18px 'latoBold';
+  color: #fe9748;
+}
+.cardSection .container .card .leftCard {
+  float: left;
+  width: 60%;
+  clear: both;
+  margin-bottom: 20px;
+}
+.cardSection .container .card .rightCard {
+  float: right;
+  width: 40%;
+}
+.footerSection {
+  background-color: #c1c4cb;
+}
+.footerSection .container {
+  background-color: #c1c4cb;
+}
+.footerSection .container .banners .bannerLogoLeft {
+  width: 70%;
+  float: left;
+}
+.footerSection .container .banners .bannerLogoLeft img {
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.footerSection .container .banners .bannerLogoLeft img:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.footerSection .container .banners .bannerLogoRight {
+  width: 30%;
+  position: relative;
+  float: right;
+}
+.footerSection .container .banners .bannerLogoRight img {
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.footerSection .container .banners .bannerLogoRight img:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.footerSection .container .banners .bannerLogoRight:after {
+  content: '';
+  position: absolute;
+  display: block;
+  background-color: #51545b;
+  bottom: 0;
+  left: -53px;
+  height: 73px;
+  width: 1px;
+}
+.footerSection .container .banners .bannerLogoRight .lineHeight {
+  position: relative;
+  display: inline-block;
+}
+.footerSectionDown {
+  padding-bottom: 12px;
+  background-color: #c1c4cb;
+}
+.footerSectionDown .container .footerCopy {
+  margin-top: 30px;
+  padding-top: 25px;
+  overflow: hidden;
+  border-top: dashed 2px #51545b;
+}
+.footerSectionDown .container .footerCopy .leftTextFooter {
+  font: 14px/18px 'latoRegular';
+  color: #51545b;
+}
+.footerSectionDown .container .footerCopy .rightTextFooter {
+  font: 14px/18px 'latoRegular';
+}
+.footerSectionDown .container .footerCopy .rightTextFooter a {
+  color: #51545b;
+  position: relative;
+  margin-left: 8px;
+}
+.footerSectionDown .container .footerCopy .rightTextFooter a:nth-child(n+2):after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -6px;
+  width: 1px;
+  height: 14px;
+  background-color: #51545b;
+}
+.bannerLogo {
+  margin-top: 60px;
+  margin-bottom: 12px;
+  font: 12px/12px 'latoRegular';
+  color: #51545b;
+}
+select {
+  -webkit-transform: translate(-10000px, -100000px);
+  -moz-transform: translate(-10000px, -100000px);
+  -ms-transform: translate(-10000px, -100000px);
+  -o-transform: translate(-10000px, -100000px);
+  transform: translate(-10000px, -100000px);
+}
+.selectbox {
+  width: 100%;
+}
+.selectbox .text {
+  color: #a5afb5;
+  font: 14px/30px 'latoItalic';
+}
+.selectbox .select {
+  background: #ffffff;
+  width: 100%;
+  height: 30px;
+  display: block;
+  padding: 0 15px;
+  color: #ebecef;
+  border: 1px solid #a5afb5;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font: 14px/28px 'latoItalic';
+  box-shadow: inset 0 -10px 3px;
+  cursor: pointer;
+}
+.selectbox .select.active {
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+.selectbox .select .text {
+  color: #a5afb5;
+  font: 14px/30px 'latoItalic';
+}
+.selectbox .trigger {
+  width: 30px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #ffffff;
+  box-shadow: inset 0 -10px 3px;
+  cursor: pointer;
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+  text-align: center;
+}
+.selectbox .trigger:before {
+  content: '\f107';
+  font: 16px/28px 'FontAwesome';
+  color: green;
+}
+.selectbox .dropdown {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #a5afb5;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+}
+.selectbox .dropdown ul li {
+  border-bottom: 1px solid #a5afb5;
+  font: 14px/28px 'latoItalic';
+  padding: 0 15px;
+  color: #a5afb5;
+  cursor: pointer;
+}
+.selectbox .dropdown ul li:hover {
+  background: #a5afb5;
+  color: #000;
+}
+@media screen and (max-width: 1121px) {
+  .socialBlock {
+    display: none;
+  }
+  .whiteBlock {
+    display: none;
+  }
+}
+@media screen and (max-width: 1121px) {
+  .productsSection .container .item {
+    width: 100%;
+    margin: auto 0;
+    vertical-align: middle;
+    margin-bottom: 30px;
+  }
+  .cardSection .container .card {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto 0;
+  }
+  .bannerSection .container {
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+  }
+  .bannerSection .container .bannerPluns {
+    width: 100%;
+    height: 115%;
+  }
+  .bannerSection .container .bannerPluns .bannerMainButton {
+    width: 100%;
+  }
+  .bannerSection .container .bannerPluns .chat {
+    float: none;
+  }
+  .bannerSection .container .bannerVideo {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 995px) {
+  .footerSection .container .banners .bannerLogoLeft {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+  .footerSection .container .banners .bannerLogoRight {
+    text-align: center;
+    width: 100%;
+    float: none;
+  }
+}
+@media screen and (max-width: 852px) {
+  .productsSection .container .item .bottomText {
+    opacity: 1;
+  }
+  .productsSection .container .item .centerIcon {
+    top: 25px;
+  }
+  .cardSection .container .card {
+    margin: 20px auto;
+  }
+  .formSection .container .callBlock .chat {
+    width: 60%;
+  }
+  .clearShadow {
+    display: none;
+  }
+  .formSection .container .formBlock {
+    text-align: left;
+    width: 60%;
+    margin: 30px auto;
+    float: none;
+    vertical-align: middle;
+  }
+  .formSection .container .formBlock form .customInput {
+    width: 100%;
+  }
+  .formSection .container .formBlock form .customButton {
+    width: 50%;
+    float: none;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .formSection .container .callBlock {
+    text-align: center;
+    width: 100%;
+    float: left;
+  }
+}
+@media screen and (max-width: 726px) {
+  .footerSectionDown .container .footerCopy .leftTextFooter {
+    width: 100%;
+    text-align: center;
+  }
+  .footerSectionDown .container .footerCopy .rightTextFooter {
+    width: 100%;
+    text-align: center;
+  }
+  .headerSection .container .headerLogo {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+  }
+  .headerSection .container .headerButton {
+    width: 100%;
+    text-align: center;
+    margin: auto 0;
+  }
+  .headerSection .container .headerButton .sales {
+    margin-left: 0px;
+  }
+  .headerSection .container .headerButton a {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .formSection .container .formBlock {
+    text-align: left;
+    width: 90%;
+    margin: 30px auto;
+    float: none;
+    vertical-align: middle;
+  }
+  .formSection .container .formBlock form .customInput {
+    width: 100%;
+  }
+  .formSection .container .formBlock form .customButton {
+    width: 50%;
+    float: none;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .formSection .container .callBlock {
+    text-align: center;
+    width: 100%;
+    float: left;
+  }
 }

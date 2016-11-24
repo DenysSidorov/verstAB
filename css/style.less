@@ -5,10 +5,10 @@
 
 @grey: #5d6067;
 @orange: #fe9748;
-@darkGreq: #51545b;
+@darkGrey: #51545b;
+@brightGrey: #a5afb5;
 
 @cyan: #83a7a5;
-@green: #6fb049;
 
 @font-face {
   font-family: 'latoLight';
@@ -147,9 +147,11 @@ html {
     overflow: hidden;
     height: 100%;
   }
+
   .parallaxAttach {
     background-attachment: fixed;
   }
+
   .parallaxBackground {
     -webkit-background-size: 100% auto;
     background-size: 100% auto;
@@ -198,14 +200,9 @@ html {
 
 .header {
   height: 90px;
-  //background-color: rgba(246, 203, 15, 0.32);
-  //display: flex;
-  //border :1px solid black;
-  //align-items: center;
-  //justify-content: center;
   .headerLogo {
     margin-top: 23px;
-    margin-left: 15px;
+    //margin-left: 15px;
   }
 }
 
@@ -227,19 +224,30 @@ html {
   vertical-align: top;
   font: 13px/31px 'Arial';
   text-align: center;
-  -webkit-box-shadow: 1px 1px 2px 2px rgba(178, 178, 178, 0.44);
-  -moz-box-shadow: 1px 1px 2px 2px rgba(178, 178, 178, 0.44);
-  box-shadow: 1px 1px 2px 2px rgba(178, 178, 178, 0.44);
-   background: linear-gradient(rgba(172, 172, 172, 1) 0%, rgba(130, 130, 130, 1) 33%, rgba(130, 130, 130, 1) 46%, rgba(87, 87, 87, 1) 60%, rgba(95, 95, 95, 1) 100%);
+  background: rgba(178, 178, 178, 1);
+  background: -moz-linear-gradient(top, rgba(178, 178, 178, 1) 0%, rgba(92, 92, 92, 1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(178, 178, 178, 1)), color-stop(100%, rgba(92, 92, 92, 1)));
+  background: -webkit-linear-gradient(top, rgba(178, 178, 178, 1) 0%, rgba(92, 92, 92, 1) 100%);
+  background: -o-linear-gradient(top, rgba(178, 178, 178, 1) 0%, rgba(92, 92, 92, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(178, 178, 178, 1) 0%, rgba(92, 92, 92, 1) 100%);
+  background: linear-gradient(to bottom, rgba(178, 178, 178, 1) 0%, rgba(92, 92, 92, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b2b2b2', endColorstr='#5c5c5c', GradientType=0);
+  background: linear-gradient(rgba(172, 172, 172, 1) 0%, rgba(130, 130, 130, 1) 33%, rgba(130, 130, 130, 1) 46%, rgba(87, 87, 87, 1) 60%, rgba(95, 95, 95, 1) 100%);
   -webkit-transition: 0.3s ease all;
   -moz-transition: 0.3s ease all;
   -ms-transition: 0.3s ease all;
   -o-transition: 0.3s ease all;
   transition: 0.3s ease all;
-  //}
   &:hover {
-    background: linear-gradient(rgb(87, 87, 87) 0%, rgb(130, 130, 130) 33%, rgba(130, 130, 130, 1) 46%, rgb(172, 172, 172) 60%, rgba(95, 95, 95, 1) 100%);
-   }
+    background: rgba(92, 92, 92, 1);
+    background: -moz-linear-gradient(top, rgba(92, 92, 92, 1) 0%, rgba(178, 178, 178, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(92, 92, 92, 1)), color-stop(100%, rgba(178, 178, 178, 1)));
+    background: -webkit-linear-gradient(top, rgba(92, 92, 92, 1) 0%, rgba(178, 178, 178, 1) 100%);
+    background: -o-linear-gradient(top, rgba(92, 92, 92, 1) 0%, rgba(178, 178, 178, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(92, 92, 92, 1) 0%, rgba(178, 178, 178, 1) 100%);
+    background: linear-gradient(to bottom, rgba(92, 92, 92, 1) 0%, rgba(178, 178, 178, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5c5c5c', endColorstr='#b2b2b2', GradientType=0);
+  }
 }
 
 .sales {
@@ -255,7 +263,6 @@ html {
   text-align: center;
   font: 13px/31px 'Arial';
   border: solid #acacac 1px;
-  //text-decoration: none;
   box-shadow: inset 0px 0px 3px 3px #efefef;
   &:hover {
     background: #acacac;
@@ -271,16 +278,53 @@ html {
 .shadowLine {
   margin-top: 10px;;
   width: 100%;
-  height: 1px;
+  height: 26px;
   background-color: #ffffff;
-  border-radius: 500px;
-  -webkit-box-shadow: 0px -6px 11px 0px rgba(50, 50, 50, 0.5);
-  -moz-box-shadow: 0px -6px 11px 0px rgba(50, 50, 50, 0.5);
-  box-shadow: 0px -6px 11px 0px rgba(50, 50, 50, 0.5);
+  -webkit-box-shadow: 0px -10px 30px -10px rgba(231, 231, 231, 1);
+  -moz-box-shadow: 0px -10px 30px -10px rgba(231, 231, 231, 1);
+  box-shadow: 0px -10px 30px -10px rgba(231, 231, 231, 1);
+}
+
+.socOne {
+  background-color: #8595b1;
+  &:hover {
+    background-color: #afc0e7;
+  }
+}
+
+.socTwo {
+  background-color: #6ecce9;
+  &:hover {
+    background-color: #8ae1ff;
+  }
+}
+
+.socThree {
+  background-color: #e18286;
+  &:hover {
+    background-color: #fe9a9e;
+  }
+}
+
+.socFour {
+  background-color: #72a1b6;
+  &:hover {
+    background-color: #9acfe5;
+  }
+}
+
+.socFife {
+  background-color: #e6b38a;
+  &:hover {
+    background-color: #fec79c;
+  }
 }
 
 .bannerSection {
   .container {
+    -webkit-box-shadow: 0px 10px 30px -10px rgba(221, 221, 221, 1);
+    -moz-box-shadow: 0px 10px 30px -10px rgba(221, 221, 221, 1);
+    box-shadow: 0px 10px 30px -10px rgba(221, 221, 221, 1);
     padding-left: 60px;
     padding-right: 10px;
     background-color: #f2f2f2;
@@ -288,24 +332,44 @@ html {
     -moz-border-radius: 10px;
     border-radius: 10px;
     height: 420px;
-    margin-top: 25px;
     padding-bottom: 30px;
     padding-top: 30px;
-.socialBlock{
-  position: absolute;
-  top: 50%;
-  background-color: #83a7a5;
-  width: 40px;
-  height: 165px;;
-}
+    .whiteBlock {
+      width: 25px;
+      height: 300px;
+      position: absolute;
+      top: 60px;
+      left: 103%;
+      -webkit-box-shadow: inset 10px 0px 15px -14px rgba(172, 172, 172, 1);
+      -moz-box-shadow: inset 10px 0px 15px -14px rgba(172, 172, 172, 1);
+      box-shadow: inset 10px 0px 15px -14px rgba(172, 172, 172, 1);
+    }
+    .socialBlock {
+      position: absolute;
+      top: 31%;
+      left: 102%;
+      width: 40px;
+      height: 165px;;
+      padding: 15px 0 15px 0;
+      -webkit-box-shadow: 10px 10px 30px -10px rgba(221, 221, 221, 1);
+      -moz-box-shadow: 10px 10px 30px -10px rgba(221, 221, 221, 1);
+      box-shadow: 10px 10px 30px -10px rgba(221, 221, 221, 1);
+      .socButton {
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        margin: 0 auto 8px;
+        a {
+          color: #ffffff;
+        }
+      }
+    }
     .bannerPluns {
-      background-color: rgba(255, 211, 159, 0.33);
       width: 400px;
       height: 100%;
       .bannerTitle {
         color: @orange;
         font: 12px/27px @latoBold;
-        // loto bold
       }
       .bannerContentText {
         height: 182px;
@@ -313,51 +377,7 @@ html {
         font: 45px/45px @latoLight;
         color: @grey;
       }
-      .bannerMainButton {
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        border-radius: 4px;
-        background: rgba(254, 150, 60, 1);
-        background: -moz-linear-gradient(top, rgba(254, 150, 60, 1) 0%, rgba(237, 132, 51, 1) 26%, rgba(215, 111, 41, 1) 55%, rgba(187, 79, 26, 1) 87%, rgba(211, 87, 30, 1) 100%);
-        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254, 150, 60, 1)), color-stop(26%, rgba(237, 132, 51, 1)), color-stop(55%, rgba(215, 111, 41, 1)), color-stop(87%, rgba(187, 79, 26, 1)), color-stop(100%, rgba(211, 87, 30, 1)));
-        background: -webkit-linear-gradient(top, rgba(254, 150, 60, 1) 0%, rgba(237, 132, 51, 1) 26%, rgba(215, 111, 41, 1) 55%, rgba(187, 79, 26, 1) 87%, rgba(211, 87, 30, 1) 100%);
-        background: -o-linear-gradient(top, rgba(254, 150, 60, 1) 0%, rgba(237, 132, 51, 1) 26%, rgba(215, 111, 41, 1) 55%, rgba(187, 79, 26, 1) 87%, rgba(211, 87, 30, 1) 100%);
-        background: -ms-linear-gradient(top, rgba(254, 150, 60, 1) 0%, rgba(237, 132, 51, 1) 26%, rgba(215, 111, 41, 1) 55%, rgba(187, 79, 26, 1) 87%, rgba(211, 87, 30, 1) 100%);
-        background: linear-gradient(to bottom, rgba(254, 150, 60, 1) 0%, rgba(237, 132, 51, 1) 26%, rgba(215, 111, 41, 1) 55%, rgba(187, 79, 26, 1) 87%, rgba(211, 87, 30, 1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe963c', endColorstr='#d3571e', GradientType=0);
-        display: inline-block;
-        height: 70px;
-        width: 290px;
-        margin-top: 25px;;
-        box-shadow: 0px 0px 3px 3px rgba(194, 194, 194, 0.4);
-        -moz-box-shadow: 0px 0px 3px 3px rgba(194, 194, 194, 0.4);
-        -webkit-box-shadow: 0px 0px 3px 3px rgba(194, 194, 194, 0.4);
-        text-align: center;
-        padding: 12px;
-        -webkit-transition: 0.3s ease all;
-        -moz-transition: 0.3s ease all ;
-        -ms-transition: 0.3s ease all ;
-        -o-transition: 0.3s ease all ;
-        transition: 0.3s ease all;
-        .plans {
-          font: 32px/32px @latoBold;
-          color: #ffffff;
-        }
-        .from {
-          font: 14px/17px @latoRegular;
-          color: #ffffff;
-        }
-        &:hover{
-          background-color: rgba(254, 150, 60, 1);
-          background: -moz-linear-gradient(top, rgb(187, 79, 26) 0%, rgba(237, 132, 51, 1) 26%, rgba(215, 111, 41, 1) 55%, rgb(254, 150, 60) 87%, rgba(211, 87, 30, 1) 100%);
-          background: -webkit-gradient(left top, left bottom, color-stop(0%, rgb(187, 79, 26)), color-stop(26%, rgba(237, 132, 51, 1)), color-stop(55%, rgba(215, 111, 41, 1)), color-stop(87%, rgb(254, 150, 60)), color-stop(100%, rgba(211, 87, 30, 1)));
-          background: -webkit-linear-gradient(top, rgb(187, 79, 26) 0%, rgba(237, 132, 51, 1) 26%, rgba(215, 111, 41, 1) 55%, rgb(254, 150, 60) 87%, rgba(211, 87, 30, 1) 100%);
-          background: -o-linear-gradient(top, rgb(187, 79, 26) 0%, rgba(237, 132, 51, 1) 26%, rgba(215, 111, 41, 1) 55%, rgb(254, 150, 60) 87%, rgba(211, 87, 30, 1) 100%);
-          background: -ms-linear-gradient(top, rgb(187, 79, 26) 0%, rgba(237, 132, 51, 1) 26%, rgba(215, 111, 41, 1) 55%, rgb(254, 150, 60) 87%, rgba(211, 87, 30, 1) 100%);
-          background: linear-gradient(to bottom, rgb(187, 79, 26) 0%, rgba(237, 132, 51, 1) 26%, rgba(215, 111, 41, 1) 55%, rgb(254, 150, 60) 87%, rgba(211, 87, 30, 1) 100%);
-        }
 
-      }
     }
     .bannerVideo {
       width: 500px;
@@ -368,13 +388,55 @@ html {
       background: -webkit-linear-gradient(top, rgba(242, 242, 242, 1) 0%, rgba(238, 238, 238, 1) 100%);
       background: linear-gradient(to bottom, rgba(242, 242, 242, 1) 0%, rgba(238, 238, 238, 1) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#eeeeee', GradientType=0);
-
       .mobileVideo {
-        height:100%
-      ;
+        height: 100%;
       }
-
     }
+  }
+}
+
+.bannerMainButton {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background: rgba(254, 150, 60, 1);
+  background: -moz-linear-gradient(top, rgba(254, 150, 60, 1) 0%, rgba(237, 132, 51, 1) 26%, rgba(215, 111, 41, 1) 55%, rgba(187, 79, 26, 1) 87%, rgba(211, 87, 30, 1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254, 150, 60, 1)), color-stop(26%, rgba(237, 132, 51, 1)), color-stop(55%, rgba(215, 111, 41, 1)), color-stop(87%, rgba(187, 79, 26, 1)), color-stop(100%, rgba(211, 87, 30, 1)));
+  background: -webkit-linear-gradient(top, rgba(254, 150, 60, 1) 0%, rgba(237, 132, 51, 1) 26%, rgba(215, 111, 41, 1) 55%, rgba(187, 79, 26, 1) 87%, rgba(211, 87, 30, 1) 100%);
+  background: -o-linear-gradient(top, rgba(254, 150, 60, 1) 0%, rgba(237, 132, 51, 1) 26%, rgba(215, 111, 41, 1) 55%, rgba(187, 79, 26, 1) 87%, rgba(211, 87, 30, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(254, 150, 60, 1) 0%, rgba(237, 132, 51, 1) 26%, rgba(215, 111, 41, 1) 55%, rgba(187, 79, 26, 1) 87%, rgba(211, 87, 30, 1) 100%);
+  background: linear-gradient(to bottom, rgba(254, 150, 60, 1) 0%, rgba(237, 132, 51, 1) 26%, rgba(215, 111, 41, 1) 55%, rgba(187, 79, 26, 1) 87%, rgba(211, 87, 30, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe963c', endColorstr='#d3571e', GradientType=0);
+  display: inline-block;
+  height: 70px;
+  width: 290px;
+  margin-top: 25px;;
+  box-shadow: 0px 0px 3px 3px rgba(194, 194, 194, 0.4);
+  -moz-box-shadow: 0px 0px 3px 3px rgba(194, 194, 194, 0.4);
+  -webkit-box-shadow: 0px 0px 3px 3px rgba(194, 194, 194, 0.4);
+  text-align: center;
+  padding: 12px;
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -ms-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  .plans {
+    font: 32px/32px @latoBold;
+    color: #ffffff;
+  }
+  .from {
+    font: 14px/17px @latoRegular;
+    color: #ffffff;
+  }
+  &:hover {
+    background-color: rgba(254, 150, 60, 1);
+    background: -moz-linear-gradient(top, rgb(187, 79, 26) 0%, rgba(237, 132, 51, 1) 26%, rgba(215, 111, 41, 1) 55%, rgb(254, 150, 60) 87%, rgba(211, 87, 30, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgb(187, 79, 26)), color-stop(26%, rgba(237, 132, 51, 1)), color-stop(55%, rgba(215, 111, 41, 1)), color-stop(87%, rgb(254, 150, 60)), color-stop(100%, rgba(211, 87, 30, 1)));
+    background: -webkit-linear-gradient(top, rgb(187, 79, 26) 0%, rgba(237, 132, 51, 1) 26%, rgba(215, 111, 41, 1) 55%, rgb(254, 150, 60) 87%, rgba(211, 87, 30, 1) 100%);
+    background: -o-linear-gradient(top, rgb(187, 79, 26) 0%, rgba(237, 132, 51, 1) 26%, rgba(215, 111, 41, 1) 55%, rgb(254, 150, 60) 87%, rgba(211, 87, 30, 1) 100%);
+    background: -ms-linear-gradient(top, rgb(187, 79, 26) 0%, rgba(237, 132, 51, 1) 26%, rgba(215, 111, 41, 1) 55%, rgb(254, 150, 60) 87%, rgba(211, 87, 30, 1) 100%);
+    background: linear-gradient(to bottom, rgb(187, 79, 26) 0%, rgba(237, 132, 51, 1) 26%, rgba(215, 111, 41, 1) 55%, rgb(254, 150, 60) 87%, rgba(211, 87, 30, 1) 100%);
   }
 }
 
@@ -394,29 +456,25 @@ html {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-transition: all ease 0.5s ;
-  -moz-transition: all ease 0.5s ;
-  -ms-transition: all ease 0.5s ;
-  -o-transition: all ease 0.5s ;
-  transition: all ease 0.5s ;
-  //height:100px;
-  //width: 100px;
-  //background-image:img('img/play.png');
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s;
   &:after {
     content: '';
-    position: absolute; /* Абсолютное позиционирование */
+    position: absolute;
     left: 37px;
-    top: 18px; /* Положение треугольника */
-
+    top: 18px;
     display: block;
     //background-color: #6fb049;
     border: 26px solid transparent;
     border-left: 26px solid white;
   }
 
-  &:hover{
-    background-color: #f6903b;
-    &:after{
+  &:hover {
+    background-color: #e47d3c;
+    &:after {
       border-left: 26px solid #dedede;
     }
   }
@@ -431,11 +489,9 @@ html {
 .productsSection {
   margin: 30px 0;
   .item {
-    //display: block;
     background-color: #f2f2f2;
     width: 31%;
     height: 170px;
-    //background: #000;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
@@ -444,9 +500,6 @@ html {
     position: relative;
     overflow: hidden;
     .bottomText {
-      //-webkit-border-radius: 15px;
-      //-moz-border-radius: 15px;
-      //border-radius: 15px;
       position: absolute;
       left: 0;
       bottom: 0;
@@ -454,16 +507,15 @@ html {
       overflow: hidden;
       width: 100%;
       background: rgba(0, 0, 0, 0.3);
-      -webkit-transform: translateY(100%);
-      -moz-transform: translateY(100%);
-      -ms-transform: translateY(100%);
-      -o-transform: translateY(100%);
-      transform: translateY(100%);
+      opacity: 0;
       -webkit-transition: 0.3s ease all;
       -moz-transition: 0.3s ease all;
       -ms-transition: 0.3s ease all;
       -o-transition: 0.3s ease all;
       transition: 0.3s ease all;
+      -webkit-border-radius: 0 0 15px 15px;
+      -moz-border-radius: 0 0 15px 15px;
+      border-radius: 0 0 15px 15px;
       span {
         position: absolute;
         left: 50%;
@@ -505,21 +557,13 @@ html {
     }
     &:hover {
       .bottomText {
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        -o-transform: translateY(0);
-        transform: translateY(0);
+        opacity: 1;
       }
       .centerIcon {
         top: 25px;
-        //  -webkit-transform: translateY(0);
-        //  -moz-transform: translateY(0);
-        //  -ms-transform: translateY(0);
-        //  -o-transform: translateY(0);
-        //  transform: translateY(0);
       }
     }
+
     .itemStart {
       margin: 20px 0 30px 30px;
       li {
@@ -530,14 +574,620 @@ html {
         }
       }
     }
-    .startText{
+
+    .startText {
       text-align: center;
       font: 14px/21px @latoBold;
       color: #000000;
-      span{
+      span {
         display: inline;
         color: @orange;
         font: 14px/21px @latoBold;
+      }
+    }
+  }
+}
+
+.shadowLineDown {
+  clear: both;
+  -webkit-box-shadow: 0px 10px 30px -10px rgba(221, 221, 221, 1);
+  -moz-box-shadow: 0px 10px 30px -10px rgba(221, 221, 221, 1);
+  box-shadow: 0px 10px 30px -10px rgba(221, 221, 221, 1);
+  width: 100%;
+  height: 25px;
+  background-color: #ffffff;
+}
+
+.clearShadow {
+  height: 170px;
+}
+
+.formSection {
+  .container {
+    margin-top: 14px;;
+    max-height: 350px;
+    .formBlock {
+      background: rgba(255, 255, 255, 1);
+      background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(232, 233, 237, 1) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(232, 233, 237, 1)));
+      background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(232, 233, 237, 1) 100%);
+      background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(232, 233, 237, 1) 100%);
+      background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(232, 233, 237, 1) 100%);
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(232, 233, 237, 1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e8e9ed', GradientType=0);
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      border: 1px solid #ceced3;
+      padding: 30px 20px 25px 25px;
+      width: 75%;
+      .customInput {
+        height: 30px;
+        margin-bottom: 10px;
+        input {
+          display: block;
+          height: 100%;
+          width: 100%;
+          padding: 0 15px;
+          color: @brightGrey;
+          border: 1px solid @brightGrey;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+          font: 14px/14px @latoItalic;
+          &::-webkit-input-placeholder {
+            color: @brightGrey;
+          }
+          &::-moz-placeholder {
+            color: @brightGrey;
+          }
+          /* Firefox 19+ */
+          &:-moz-placeholder {
+            color: @brightGrey;
+          }
+          /* Firefox 18- */
+          &:-ms-input-placeholder {
+            color: @brightGrey;
+          }
+          -webkit-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.12);
+          -moz-box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.12);
+        }
+      }
+
+      .customButton {
+        button {
+          display: inline-block;
+          height: 30px;
+          width: 135px;
+          border: 1px solid #c3c3c7;
+          color: white;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+          font: 14px/17px @latoBold;
+          -webkit-transition: all 0.3s ease;
+          -moz-transition: all 0.3s ease;
+          -ms-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+          background: rgba(195, 195, 195, 1);
+          background: -moz-linear-gradient(top, rgba(195, 195, 195, 1) 0%, rgba(76, 76, 76, 1) 100%);
+          background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(195, 195, 195, 1)), color-stop(100%, rgba(76, 76, 76, 1)));
+          background: -webkit-linear-gradient(top, rgba(195, 195, 195, 1) 0%, rgba(76, 76, 76, 1) 100%);
+          background: -o-linear-gradient(top, rgba(195, 195, 195, 1) 0%, rgba(76, 76, 76, 1) 100%);
+          background: -ms-linear-gradient(top, rgba(195, 195, 195, 1) 0%, rgba(76, 76, 76, 1) 100%);
+          background: linear-gradient(to bottom, rgba(195, 195, 195, 1) 0%, rgba(76, 76, 76, 1) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c3c3c3', endColorstr='#4c4c4c', GradientType=0);
+          &:hover {
+            background: #4C4C4C;
+            color: #ffffff;
+          }
+        }
+      }
+      .formTitle {
+        font: 42px/42px @latoLight;
+        color: #333333;
+      }
+      .formSubTitle {
+        font: 16px/25px @latoRegular;
+        color: #a1a1a1;
+        margin: 10px 0 20px;
+      }
+    }
+    .callBlock {
+      text-align: center;
+      width: 25%;
+      .freeButton {
+        margin-top: 3px;
+        width: 175px;
+        .from {
+          font: 10px/10px @latoRegular;
+        }
+        .plans {
+          font: 23px/34px @latoRegular;
+        }
+      }
+      .chat {
+        width: 175px;
+      }
+      .call {
+        margin-top: 22px;;
+        font: 22px/32px @latoRegular;
+        color: #797979;
+      }
+      .phone {
+        color: @orange;
+        font: 22px/22px @latoBold;
+      }
+    }
+  }
+}
+
+.cardSection {
+  margin-top: 70px;
+  margin-bottom: 75px;;
+  .container {
+    .card {
+      position: relative;
+      padding: 40px 20px 10px;
+      float: left;
+      width: 32.3333%;
+      margin: 0 0 0 1.333333%;
+      height: 290px;
+      background: rgba(255, 255, 255, 1);
+      background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(232, 233, 237, 1) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(232, 233, 237, 1)));
+      background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(232, 233, 237, 1) 100%);
+      background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(232, 233, 237, 1) 100%);
+      background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(232, 233, 237, 1) 100%);
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(232, 233, 237, 1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e8e9ed', GradientType=0);
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      border: 1px solid #ceced3;
+      &:nth-child(1) {
+        margin: 0 0 0 0;
+      }
+      .lineDivide {
+        width: 100%;
+        height: 1px;
+        background-color: #070707;
+        margin: 20px 0 20px 0;
+      }
+      .titleCard {
+        font: 20px/20px @latoBold;
+        color: #000000;
+      }
+      .contentCard {
+        font: 14px/18px @latoRegular;
+        color: #848484;
+        max-height: 108px;
+        overflow: hidden;
+      }
+      .quoteCard {
+
+        margin-top: 20px;
+        clear: both;
+        font: 13px/18px @latoBold;
+        color: #333333;
+      }
+      .readMoreCard {
+        float: right;
+        position: absolute;
+        right: 13px;
+        bottom: 13px;
+        font: 14px/18px @latoBold;
+        color: @orange;
+      }
+      .leftCard {
+        float: left;
+        width: 60%;
+        clear: both;
+        margin-bottom: 20px;
+      }
+      .rightCard {
+        float: right;
+        width: 40%;
+      }
+    }
+  }
+}
+
+.footerSection {
+  background-color: #c1c4cb;
+  .container {
+    background-color: #c1c4cb;
+    .banners {
+      .bannerLogoLeft {
+        width: 70%;
+        float: left;
+        img {
+          cursor: pointer;
+          -webkit-transition: all 0.4s ease;
+          -moz-transition: all 0.4s ease;
+          -ms-transition: all 0.4s ease;
+          -o-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+          &:hover {
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            transform: scale(1.2);
+          }
+        }
+      }
+      .bannerLogoRight {
+
+        img {
+          cursor: pointer;
+          -webkit-transition: all 0.4s ease;
+          -moz-transition: all 0.4s ease;
+          -ms-transition: all 0.4s ease;
+          -o-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+          &:hover {
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            transform: scale(1.2);
+          }
+        }
+        width: 30%;
+        position: relative;
+        float: right;
+        &:after {
+          content: '';
+          position: absolute;
+          display: block;
+          background-color: @darkGrey;
+          bottom: 0;
+          left: -53px;
+          height: 73px;
+          width: 1px;
+        }
+        .lineHeight {
+          position: relative;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+.footerSectionDown {
+  padding-bottom: 12px;;
+  background-color: #c1c4cb;
+  .container {
+    .footerCopy {
+      margin-top: 30px;
+      padding-top: 25px;;
+      overflow: hidden;
+      border-top: dashed 2px @darkGrey;
+      .leftTextFooter {
+        font: 14px/18px @latoRegular;
+        color: @darkGrey;
+      }
+      .rightTextFooter {
+        font: 14px/18px @latoRegular;
+        a {
+          color: @darkGrey;
+          position: relative;
+          margin-left: 8px;;
+          &:nth-child(n+2) {
+            &:after {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: -6px;
+              width: 1px;
+              height: 14px;
+              background-color: @darkGrey;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.bannerLogo {
+  margin-top: 60px;
+  margin-bottom: 12px;;
+  font: 12px/12px @latoRegular;
+  color: @darkGrey;
+}
+
+select {
+  -webkit-transform: translate(-10000px, -100000px);
+  -moz-transform: translate(-10000px, -100000px);
+  -ms-transform: translate(-10000px, -100000px);
+  -o-transform: translate(-10000px, -100000px);
+  transform: translate(-10000px, -100000px);
+}
+
+.selectbox {
+  width: 100%;
+  .text {
+    color: @brightGrey;
+    font: 14px/30px @latoItalic;
+  }
+  .select {
+    background: #ffffff;
+    width: 100%;
+    height: 30px;
+    display: block;
+    padding: 0 15px;
+    color: #ebecef;
+    border: 1px solid @brightGrey;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font: 14px/28px @latoItalic;
+    box-shadow: inset 0 -10px 3px;
+    cursor: pointer;
+    &.active {
+      -webkit-border-radius: 5px 5px 0 0;
+      -moz-border-radius: 5px 5px 0 0;
+      border-radius: 5px 5px 0 0;
+    }
+    .text {
+      color: @brightGrey;
+      font: 14px/30px @latoItalic;
+    }
+  }
+
+  .trigger {
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #ffffff;
+    box-shadow: inset 0 -10px 3px;
+    cursor: pointer;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+    &:before {
+      content: '\f107';
+      font: 16px/28px 'FontAwesome';
+      color: green;
+    }
+  }
+
+  .dropdown {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid @brightGrey;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    ul {
+      li {
+        border-bottom: 1px solid @brightGrey;
+        font: 14px/28px @latoItalic;
+        padding: 0 15px;
+        color: @brightGrey;
+        cursor: pointer;
+        &:hover {
+          background: @brightGrey;
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1121px) {
+  .socialBlock {
+    display: none;
+  }
+
+  .whiteBlock {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1121px) {
+  .productsSection {
+    .container {
+      .item {
+        width: 100%;
+        margin: auto 0;
+        vertical-align: middle;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .cardSection {
+    .container {
+      .card {
+        width: 100%;
+        text-align: center;
+        vertical-align: middle;
+        margin: auto 0;
+      }
+    }
+  }
+
+  .bannerSection {
+    .container {
+      padding-left: 0px;
+      padding-right: 0px;
+      text-align: center;
+      .bannerPluns {
+        width: 100%;
+        height: 115%;
+        .bannerMainButton {
+          width: 100%;
+        }
+        .chat {
+          float: none;
+        }
+      }
+      .bannerVideo {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .footerSection {
+    .container {
+      .banners {
+        .bannerLogoLeft {
+          width: 100%;
+          float: none;
+          text-align: center;
+        }
+        .bannerLogoRight {
+          text-align: center;
+          width: 100%;
+          float: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 852px) {
+  .productsSection {
+    .container {
+      .item {
+        .bottomText {
+          opacity: 1;
+        }
+        .centerIcon {
+          top: 25px;
+        }
+      }
+    }
+  }
+
+  .cardSection {
+    .container {
+      .card {
+        margin: 20px auto;
+      }
+    }
+  }
+
+  .formSection {
+    .container {
+      .callBlock {
+        .chat {
+          width: 60%;
+        }
+      }
+    }
+  }
+
+  .clearShadow {
+    display: none;
+  }
+
+  .formSection {
+    .container {
+      .formBlock {
+        text-align: left;
+        width: 60%;
+        margin: 30px auto;
+        float: none;
+        vertical-align: middle;
+        //display: none;
+        form {
+          .customInput {
+            width: 100%;
+          }
+          .customButton {
+            width: 50%;
+            float: none;
+            text-align: center;
+            vertical-align: middle;
+          }
+        }
+      }
+      .callBlock {
+        text-align: center;
+        width: 100%;
+        float: left;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 726px) {
+  .footerSectionDown {
+    .container {
+      .footerCopy {
+        .leftTextFooter {
+          width: 100%;
+          text-align: center;
+        }
+        .rightTextFooter {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .headerSection {
+    .container {
+      .headerLogo {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+      }
+      .headerButton {
+        width: 100%;
+        text-align: center;
+        margin: auto 0;
+        .sales {
+          margin-left: 0px;
+        }
+        a {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .formSection {
+    .container {
+      .formBlock {
+        text-align: left;
+        width: 90%;
+        margin: 30px auto;
+        float: none;
+        vertical-align: middle;
+        //display: none;
+        form {
+          .customInput {
+            width: 100%;
+          }
+          .customButton {
+            width: 50%;
+            float: none;
+            text-align: center;
+            vertical-align: middle;
+          }
+        }
+      }
+      .callBlock {
+        text-align: center;
+        width: 100%;
+        float: left;
       }
     }
   }
